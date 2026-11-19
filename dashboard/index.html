@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token Radar — pre-token protocols ranked by implied value</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="brand">
+      <span class="dot" aria-hidden="true"></span>
+      <div>
+        <h1>Token Radar</h1>
+        <p class="sub">Every protocol that records no token, ranked by what its launch would be worth.</p>
+      </div>
+    </div>
+    <dl class="stats" id="stats"></dl>
+  </div>
+</header>
+<nav class="tabs wrap" id="tabs" aria-label="Views"></nav>
+<main class="wrap" id="view" aria-busy="true"></main>
+<noscript><p class="wrap" style="color:#f87171">Token Radar needs JavaScript: the board is rendered from the snapshot data the page carries.</p></noscript>
+<footer class="wrap foot">
+  <p id="method"></p>
+  <p class="fine">Data: a sealed DefiLlama snapshot, fetched once. “Records no token” means the snapshot
+  carries no market cap, CoinGecko id or symbol for the protocol — it never claims the protocol
+  has none. Implied values are a model’s estimate, not a price and not a promise. Nothing here
+  is financial advice; farming a protocol costs gas and can lose money.</p>
+</footer>
+<script src="../data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
